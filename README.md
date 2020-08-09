@@ -55,12 +55,9 @@
 
   If you would like to add new features, make improvements or bug fixes, please make a pull request. I will review it and merge it into the application as necessary.
 
-
-
   ## Version
 
   ![Version Badge](https://img.shields.io/badge/version-1.0-red)
-
 
   ## Tests
 
