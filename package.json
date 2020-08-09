@@ -1,5 +1,5 @@
 {
-  "name": "note-taker",
+  "name": "eat-da-burger",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "dotenv": "^8.2.0",
     "mysql": "^2.16.0",
     "express-handlebars": "^3.0.0"
   },

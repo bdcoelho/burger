@@ -1,26 +1,23 @@
-// Dependencies
-// =============================================================
-var express = require("express");
+const express = require("express");
 
-// Sets up the Express App
-// =============================================================
-var app = express();
-var PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
+// Start express server
+const app = express();
+// Serve static content from the public folder
+app.use(express.static("public"));
 
-// Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+//Import handlebars
+const exphbs = require("express-handlebars");
 
-// Static directory
-app.use(express.static("app/public"));
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+//Import routes
+const routes = require("./controllers/burger_controller.js");
 
-// Routes
-// =============================================================
-require("./app/routes/api-routes.js")(app);
-require("./app/routes/html-routes.js")(app);
-
-// Starts the server to begin listening
-// =============================================================
+app.use(routes);
+//Listen on port
 app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
+  console.log("Server listening on: http://localhost:" + PORT);
 });
