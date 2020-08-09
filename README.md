@@ -32,6 +32,10 @@
 
   View a live demonstration [here](https://lit-chamber-58185.herokuapp.com/).
 
+  #### A screenshot of the generated web page
+
+  ![Screenshot](./public/assets/img/screenshot.png "Screenshot")
+
   ## Setup
 
   No installation is necessary. Just follow the url to use the hosted application.
@@ -40,10 +44,6 @@
   ## Usage
 
   Enter the burger that you would like to eat and click DEVOUR! to devour it (virtually).
-
-  #### A screenshot of the generated web page
-
-  ![Screenshot](./public/assets/img/screenshot.png "Screenshot")
 
   ## License
 
