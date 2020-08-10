@@ -21,7 +21,7 @@ $(function() {
   $(".input-form").on("submit", function (event) {
     event.preventDefault();
     let addBurger = {
-      burger_name: $("#ca").val()
+      burger_name: $("#burgerName").val()
     };
 
     $.ajax("/api/burgers", {
