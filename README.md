@@ -30,7 +30,7 @@
 
   ## Demonstration
 
-  View a live demonstration [here](https://lit-chamber-58185.herokuapp.com/).
+  Access the live application [here](https://lit-chamber-58185.herokuapp.com/).
 
   #### A screenshot of the generated web page
 
